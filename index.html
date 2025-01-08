@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindi Typing Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hindi Typing Practice</h1>
+    <div id="initial-box">
+      <label for="input-text">Paste or Type Text:</label>
+      <textarea id="input-text" class="textbox" placeholder="Paste or type Hindi text here..."></textarea>
+      <button onclick="submitText()">Submit</button>
+    </div>
+    <div id="practice-box" style="display: none;">
+      <button onclick="resetTimer()">Reset Timer</button>
+      <button onclick="newParagraph()">New Paragraph</button>
+      <div id="timer">Time: 0s</div>
+      <div id="original-text" class="textbox"></div>
+      <textarea id="typing-area" class="textbox" oninput="checkTyping()" placeholder="Start typing here..."></textarea>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
